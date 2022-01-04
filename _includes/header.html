@@ -7,7 +7,11 @@
                     <span class="text-graphite">{{ site.title | escape | slice: 0, restOfTitleLen }}</span>
                     <span class="text-green">{{ site.title | escape | slice: -3, 2 }}</span>
                     <span class="text-graphite">{{ site.title | escape | slice: -1, 1 }}</span>
-                    <span class="text-grey/50 hidden desktop:inline text-h5 ml-5">// blog</span>
+                    {% if site.subtitle %}
+                    <span class="text-grey/50 hidden desktop:inline text-h5 ml-5">
+                        {{ site.subtitle }}
+                    </span>
+                    {% endif %}
                 </a>
             </div>
             <div class="hidden desktop:flex items-center space-x-5">

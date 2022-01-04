@@ -31,6 +31,10 @@ Or install it yourself as:
 
 Theme has a `post` layout used for displaying a single post, an `index` layout used for displaying all posts and a page layout that differs slightly from the `post` layout.
 
+## Configuration
+
+@TODO: Document all available config options
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/simplysuperb-dev/jekyll-theme-superb. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
