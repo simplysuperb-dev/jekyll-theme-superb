@@ -12,5 +12,6 @@ module.exports = {
     },
     variants: {},
     plugins: [
+        require('@simplysuperb/ui-kit')
     ],
 }
