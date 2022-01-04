@@ -1,0 +1,7 @@
+sass:
+  sass_dir: _sass
+  style: compact
+plugins:
+  - jekyll-postcss
+  - jekyll-feed
+  - jekyll-seo-tag
