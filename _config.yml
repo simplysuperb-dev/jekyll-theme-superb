@@ -1,5 +1,5 @@
 title: ssb. # title of the blog used in <title> & as a logo
-subtitle: //blog # subtitle of the blog used in <title> & next to name 
+subtitle: /blog # subtitle of the blog used in <title> & next to name 
 sass:
   sass_dir: _sass
   style: compact

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% assign posts = site.posts %}
+
+{%- if posts.size > 0 -%}
+<ul class="mb-5 px-2 desktop:px-0">
+  {%- for post in posts -%}
+  <li class="mb-10">
+    <div class="my-2">
+      <span class="text-grey/50">0644</span>
+      <span class="text-graphite mx-4">{{ post.author }}</span>
+      <span class="text-graphite">{{ post.date | date: "%-d %b '%y" }}</span>
+    </div>
+    <a class="post-link" href="{{ post.url | relative_url }}">
+      <span class="text-grey/50 text-subtitle">./</span>
+      <span class="text-graphite text-h5 underline">{{ post.title | escape }}</span>
+      <span class="text-grey/50 text-subtitle">.txt</span>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>
+{%- else -%}
+<h3 class="text-grey text-h5 desktop:text-h3 py-10 desktop:px-0 px-4">No posts available.</h3>
+{% endif %}
