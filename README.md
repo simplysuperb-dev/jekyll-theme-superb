@@ -5,6 +5,7 @@ This is a simple Jekyll theme that uses [tailwindCSS's-based ui-kit](https://git
 ![screenshot of the theme](./screenshot.png)
 
   _\* Article titles were copied from [dev.to](dev.to)'s homepage at the time of designing of this template._
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -33,7 +34,9 @@ Theme has a `post` layout used for displaying a single post, an `index` layout u
 
 ## Configuration
 
-@TODO: Document all available config options
+Additional to other config options already present in jekyll itself, this theme also has:
+
+- **subtitle**: Shown next to the name of the blog (top left corner, visible desktop only)
 
 ## Contributing
 
@@ -41,19 +44,35 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/simply
 
 ## Development
 
-To set up your environment to develop this theme, run `bundle install`.
+To set up your environment to develop this theme, run `bundle install` and `npm install`.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `npm run jekyll:dev` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+To run `postcss` for the tailwind part:
 
-Additionally, the theme is based on tailwindCSS, so postcss is required to modify existing styles:
+```
+npm run css:dev
+```
 
-    $ npm install
-    $ npm run css:dev
+To run jekyll and its processor:
 
+```
+npm run jekyll:dev
+```
 
+> Note: You might checkout [`concurrently`](https://www.npmjs.com/package/concurrently), if you want to run both commands... wait for it... *concurrently*.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-superb.gemspec` accordingly.
+## Releasing
+
+First, make sure the theme runs smoothly (or at all) locally.
+
+Then create the 💎
+```
+gem build jekyll-theme-superb.gemspec 
+```
+
+Lastly, publish it to the ☁️
+```
+gem push jekyll-theme-superb-*.gem
+```
 
 ## License
 
