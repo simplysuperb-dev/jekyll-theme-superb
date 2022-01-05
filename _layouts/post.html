@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<div class="prose max-w-fit py-4 px-4 desktop:px-4">
-    <div>
-      <span class="text-grey/50">0644</span>
-      <span class="text-graphite mx-4">{{ page.author }}</span>
-      <span class="text-graphite">{{ page.date | date: "%-d %b '%y" }}</span>
-    </div>
-    <h2 class="mb-6 mt-0">{{page.title}}</h2>
-    {{ content }}
+<div class="px-4 py-2 desktop:px-0 post">
+  <div>
+    <span class="text-grey/50">0644</span>
+    <span class="text-graphite mx-4">{{ page.author }}</span>
+    <span class="text-graphite">{{ page.date | date: "%-d %b '%y" }}</span>
+  </div>
+  <h2 class="mb-6 mt-0 desktop:text-h4 text-h5 font-bold">{{page.title}}</h2>
+  <div class="font-serif font-thin post">{{ content }}</div>
 </div>

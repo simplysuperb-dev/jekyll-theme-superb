@@ -1,5 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .post, .page {
+        p {
+            margin-top: 1.25em;
+            margin-bottom: 1.25em;
+        }
+
+        a {
+            @apply link link-green;
+        }
+
+        code {
+            @apply bg-porcelain px-2;
+        }
+
+        ul, ol {
+            @apply list list-green;
+        }
+    }
+}

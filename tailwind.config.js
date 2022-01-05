@@ -12,7 +12,6 @@ module.exports = {
     },
     variants: {},
     plugins: [
-        require('@tailwindcss/typography'),
-        require('@simplysuperb/ui-kit')
+        require('@simplysuperb-dev/ui-kit')
     ],
 }
