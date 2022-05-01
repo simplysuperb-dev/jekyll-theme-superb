@@ -540,22 +540,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #000;
   border-color: #000;
 }
-.list li {
-  margin-left: 30px;
-}
-.list li::marker {
-  color: #aaaaaa;
-}
-ul.list {
-  list-style-type: disc;
-}
-ol.list {
-  list-style-type: counter;
-}
+.post, .page {
+
+    /* Literal.Number.Integer.Long */
+  }
 .post p, .page p {
-            margin-top: 1.25em;
-            margin-bottom: 1.25em;
-        }
+      margin-top: 1.25em;
+      margin-bottom: 1.25em;
+    }
 .post a, .page a {
   transition-property: color;
   transition-duration: 200ms;
@@ -575,11 +567,26 @@ ol.list {
   color: #98b88b;
   border-color: #98b88b;
 }
+.post a, .page a {
+  font-weight: 700;
+}
 .post code, .page code {
+  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(241 243 244 / var(--tw-bg-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.post figure.highlight, .page figure.highlight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 243 244 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+      overflow: auto;
+}
+.post figure.highlight code, .page figure.highlight code {
+  padding: 0px;
 }
 .post ul li, .post ol li, .page ul li, .page ol li {
   margin-left: 30px;
@@ -596,6 +603,269 @@ ol.post ul, ol.post ol, ol.page ul, ol.page ol {
 .post ul > li::marker, .post ol > li::marker, .page ul > li::marker, .page ol > li::marker {
   color: #98b88b;
 }
+.post .highlight .hll, .page .highlight .hll {
+      background-color: #ffffcc
+    }
+.post .highlight .c, .page .highlight .c {
+      color: #408080;
+      font-style: italic
+    }
+/* Comment */
+.post .highlight .err, .page .highlight .err {
+      border: 1px solid #FF0000
+    }
+/* Error */
+.post .highlight .k, .page .highlight .k {
+      color: #008000;
+      font-weight: bold
+    }
+/* Keyword */
+.post .highlight .o, .page .highlight .o {
+      color: #666666
+    }
+/* Operator */
+.post .highlight .cm, .page .highlight .cm {
+      color: #408080;
+      font-style: italic
+    }
+/* Comment.Multiline */
+.post .highlight .cp, .page .highlight .cp {
+      color: #BC7A00
+    }
+/* Comment.Preproc */
+.post .highlight .c1, .page .highlight .c1 {
+      color: #408080;
+      font-style: italic
+    }
+/* Comment.Single */
+.post .highlight .cs, .page .highlight .cs {
+      color: #408080;
+      font-style: italic
+    }
+/* Comment.Special */
+.post .highlight .gd, .page .highlight .gd {
+      color: #A00000
+    }
+/* Generic.Deleted */
+.post .highlight .ge, .page .highlight .ge {
+      font-style: italic
+    }
+/* Generic.Emph */
+.post .highlight .gr, .page .highlight .gr {
+      color: #FF0000
+    }
+/* Generic.Error */
+.post .highlight .gh, .page .highlight .gh {
+      color: #000080;
+      font-weight: bold
+    }
+/* Generic.Heading */
+.post .highlight .gi, .page .highlight .gi {
+      color: #00A000
+    }
+/* Generic.Inserted */
+.post .highlight .go, .page .highlight .go {
+      color: #808080
+    }
+/* Generic.Output */
+.post .highlight .gp, .page .highlight .gp {
+      color: #000080;
+      font-weight: bold
+    }
+/* Generic.Prompt */
+.post .highlight .gs, .page .highlight .gs {
+      font-weight: bold
+    }
+/* Generic.Strong */
+.post .highlight .gu, .page .highlight .gu {
+      color: #800080;
+      font-weight: bold
+    }
+/* Generic.Subheading */
+.post .highlight .gt, .page .highlight .gt {
+      color: #0040D0
+    }
+/* Generic.Traceback */
+.post .highlight .kc, .page .highlight .kc {
+      color: #008000;
+      font-weight: bold
+    }
+/* Keyword.Constant */
+.post .highlight .kd, .page .highlight .kd {
+      color: #008000;
+      font-weight: bold
+    }
+/* Keyword.Declaration */
+.post .highlight .kn, .page .highlight .kn {
+      color: #008000;
+      font-weight: bold
+    }
+/* Keyword.Namespace */
+.post .highlight .kp, .page .highlight .kp {
+      color: #008000
+    }
+/* Keyword.Pseudo */
+.post .highlight .kr, .page .highlight .kr {
+      color: #008000;
+      font-weight: bold
+    }
+/* Keyword.Reserved */
+.post .highlight .kt, .page .highlight .kt {
+      color: #B00040
+    }
+/* Keyword.Type */
+.post .highlight .m, .page .highlight .m {
+      color: #666666
+    }
+/* Literal.Number */
+.post .highlight .s, .page .highlight .s {
+      color: #BA2121
+    }
+/* Literal.String */
+.post .highlight .na, .page .highlight .na {
+      color: #7D9029
+    }
+/* Name.Attribute */
+.post .highlight .nb, .page .highlight .nb {
+      color: #008000
+    }
+/* Name.Builtin */
+.post .highlight .nc, .page .highlight .nc {
+      color: #0000FF;
+      font-weight: bold
+    }
+/* Name.Class */
+.post .highlight .no, .page .highlight .no {
+      color: #880000
+    }
+/* Name.Constant */
+.post .highlight .nd, .page .highlight .nd {
+      color: #AA22FF
+    }
+/* Name.Decorator */
+.post .highlight .ni, .page .highlight .ni {
+      color: #999999;
+      font-weight: bold
+    }
+/* Name.Entity */
+.post .highlight .ne, .page .highlight .ne {
+      color: #D2413A;
+      font-weight: bold
+    }
+/* Name.Exception */
+.post .highlight .nf, .page .highlight .nf {
+      color: #0000FF
+    }
+/* Name.Function */
+.post .highlight .nl, .page .highlight .nl {
+      color: #A0A000
+    }
+/* Name.Label */
+.post .highlight .nn, .page .highlight .nn {
+      color: #0000FF;
+      font-weight: bold
+    }
+/* Name.Namespace */
+.post .highlight .nt, .page .highlight .nt {
+      color: #008000;
+      font-weight: bold
+    }
+/* Name.Tag */
+.post .highlight .nv, .page .highlight .nv {
+      color: #19177C
+    }
+/* Name.Variable */
+.post .highlight .ow, .page .highlight .ow {
+      color: #AA22FF;
+      font-weight: bold
+    }
+/* Operator.Word */
+.post .highlight .w, .page .highlight .w {
+      color: #bbbbbb
+    }
+/* Text.Whitespace */
+.post .highlight .mf, .page .highlight .mf {
+      color: #666666
+    }
+/* Literal.Number.Float */
+.post .highlight .mh, .page .highlight .mh {
+      color: #666666
+    }
+/* Literal.Number.Hex */
+.post .highlight .mi, .page .highlight .mi {
+      color: #666666
+    }
+/* Literal.Number.Integer */
+.post .highlight .mo, .page .highlight .mo {
+      color: #666666
+    }
+/* Literal.Number.Oct */
+.post .highlight .sb, .page .highlight .sb {
+      color: #BA2121
+    }
+/* Literal.String.Backtick */
+.post .highlight .sc, .page .highlight .sc {
+      color: #BA2121
+    }
+/* Literal.String.Char */
+.post .highlight .sd, .page .highlight .sd {
+      color: #BA2121;
+      font-style: italic
+    }
+/* Literal.String.Doc */
+.post .highlight .s2, .page .highlight .s2 {
+      color: #BA2121
+    }
+/* Literal.String.Double */
+.post .highlight .se, .page .highlight .se {
+      color: #BB6622;
+      font-weight: bold
+    }
+/* Literal.String.Escape */
+.post .highlight .sh, .page .highlight .sh {
+      color: #BA2121
+    }
+/* Literal.String.Heredoc */
+.post .highlight .si, .page .highlight .si {
+      color: #BB6688;
+      font-weight: bold
+    }
+/* Literal.String.Interpol */
+.post .highlight .sx, .page .highlight .sx {
+      color: #008000
+    }
+/* Literal.String.Other */
+.post .highlight .sr, .page .highlight .sr {
+      color: #BB6688
+    }
+/* Literal.String.Regex */
+.post .highlight .s1, .page .highlight .s1 {
+      color: #BA2121
+    }
+/* Literal.String.Single */
+.post .highlight .ss, .page .highlight .ss {
+      color: #19177C
+    }
+/* Literal.String.Symbol */
+.post .highlight .bp, .page .highlight .bp {
+      color: #008000
+    }
+/* Name.Builtin.Pseudo */
+.post .highlight .vc, .page .highlight .vc {
+      color: #19177C
+    }
+/* Name.Variable.Class */
+.post .highlight .vg, .page .highlight .vg {
+      color: #19177C
+    }
+/* Name.Variable.Global */
+.post .highlight .vi, .page .highlight .vi {
+      color: #19177C
+    }
+/* Name.Variable.Instance */
+.post .highlight .il, .page .highlight .il {
+      color: #666666
+    }
 .visible {
   visibility: visible;
 }
@@ -783,25 +1053,17 @@ ol.post ul, ol.post ol, ol.page ul, ol.page ol {
 .duration-300 {
   transition-duration: 300ms;
 }
-
-
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
 }
-
-
 .hover\:border-graphite:hover {
   --tw-border-opacity: 1;
   border-color: rgb(46 46 46 / var(--tw-border-opacity));
 }
-
-
 .hover\:text-green:hover {
   --tw-text-opacity: 1;
   color: rgb(152 184 139 / var(--tw-text-opacity));
 }
-
-
 @media (min-width: 960px) {
 
   .desktop\:inline {
