@@ -12,14 +12,14 @@
   "dependencies": {
     "autoprefixer": "^10.4.1",
     "cssnano": "^5.0.14",
-    "postcss-import": "^14.0.2",
     "tailwindcss": "^3.0.9"
   },
   "devDependencies": {
-    "@simplysuperb-dev/ui-kit": "^1.1.0",
-    "@tailwindcss/typography": "^0.5.0",
-    "postcss": "^8.4.5",
-    "postcss-cli": "^9.1.0"
+    "@simplysuperb-dev/ui-kit": "^1.5.0",
+    "@tailwindcss/typography": "^0.5.12",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0"
   },
   "keywords": [],
   "author": "",
